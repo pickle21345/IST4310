@@ -34,14 +34,23 @@ between the current locations cost index and the new locations cost index and mu
 in the new location’s salary with the adjusted cost of living as a factor.
 
 Pseudo-code
+
 currentstate = POST(currentstate)
+
 desiredstate = POST(desiredstate)
+
 userSalary = POST(salary)
+
 currentCI = mysql_fetch(currentstate)
+
 newCI = mysql_fetch(desiredstate)
+
 if
+
 newSalary = userSalary(((newCI-currentCI)/100)+1)
+
 echo "This is the Salary" . newSalary . "!!"
+
 Document structure of your MySQL backend.
 MySQL backend will include the metric cost of living from the research gathered from the Missouri Economic Research and Information Center.
 Including every State and its cost index. The table will include several items/rows as States and their columns/values as the cost index.

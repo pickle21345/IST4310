@@ -1,22 +1,26 @@
 # IST4310
+
+Team Members
+
 Moreno, Oscar
 Samra, Arjun
-Dan Brown
-Group 9
+
 Description of Website
 Our website will be a single-page web application that acts as a cost of living
 comparison calculator. On a basic level, users can input their total income and the site
 will calculate the cost of living comparison between the two states. Users will be shown
 a drop-down selection of their current state and the state they are comparing to.
+
 Resources
 We will be basing our calculations on official government statistics that have already
 computed the composite cost of living index for Quarter 4 2020. Gathered from cities
 across the nation that participated in the Council for Community & Economic Research
 survey on a volunteer basis.
 https://meric.mo.gov/data/cost-living-data-series
+
 Technology Stack
 Linux, Apache, MySql, PHP(LAMP)
-.
+
 The web page will be hosted on Apache running on Debian. The frontend will be written
 in PHP, manipulating the data inputted by the user by retrieving the state’s Cost Index
 from a MySQL database and running it against the user’s Desired Location Cost Index

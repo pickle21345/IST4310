@@ -45,8 +45,6 @@ currentCI = mysql_fetch(currentstate)
 
 newCI = mysql_fetch(desiredstate)
 
-if
-
 newSalary = userSalary(((newCI-currentCI)/100)+1)
 
 echo "This is the Salary" . newSalary . "!!"

@@ -2,8 +2,8 @@
 
 Team Members
 
-Moreno, Oscar
-Samra, Arjun
+Oscar Moreno
+Arjun Samra
 
 Description of Website
 Our website will be a single-page web application that acts as a cost of living

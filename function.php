@@ -41,7 +41,7 @@
 	{
       		print "<p>Missing or invalid parameters. Please go back to the lab.html page to
       		enter valid information.<br />";
-      		print "<a href='lab07.html'>5k race</a>";
+      		//print "<a href='lab07.html'>5k race</a>";
 	}
 ?>
 

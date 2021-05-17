@@ -8,7 +8,7 @@
 		$state2 = filter_var($_POST['state2'], FILTER_SANITIZE_STRING);
 		
 		mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-		$mysqli = mysqli_connect("localhost", "root", "password", "salaries");
+		$mysqli = mysqli_connect("localhost", "root", "passwords", "salaries");
 		$query = "SELECT cost_index FROM cost WHERE state = '".$state1."'";
 
 		$result = mysqli_query($mysqli, $query);
@@ -26,22 +26,32 @@
 			$future = $row[0];
 		}
 
-		echo "<p> Current State: " .$state1. "</p>";
+		echo "<link rel='stylesheet' href='style.css'>";
+		
+		echo "<div class = 'header'><p>Real Estate Services</p></div>";
 
-		echo "<p> Future State: " .$state2. "</p>";
+		echo "<div  class='row'>";
 
-		echo "<p> This is Current Salary " .$salary. "</p>";
-			
+		echo "<div class='column' style='background-color:#aaa;'><p> Current State: " .$state1. "</p></div>";
+
+		echo "<div class='column' style='background-color:#bbb;'><p> Future State: " .$state2. "</p></div>";
+
+		echo "<div class='column' style='background-color:#ccc;'><p> This is Current Salary " .$salary. "</p></div>";
+
+
 		//$newSalary = $salary((($future-$current)/100)+1);
 		$newSalary = $salary*((($future-$current)/100)+1);
 
-		echo "<p> Your New Salary ".$newSalary." !!</p>";
+		echo "<div class='Footer'><p> Your New Salary ".$newSalary." !!</p></div>";
+
+		echo "</div>";
 	}
 	else
 	{
       		print "<p>Missing or invalid parameters. Please go back to the lab.html page to
       		enter valid information.<br />";
-      		//print "<a href='lab07.html'>5k race</a>";
+      		print "<a href='lab07.html'>5k race</a>";
 	}
 ?>
+
 

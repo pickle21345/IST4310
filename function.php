@@ -8,7 +8,7 @@
 		$state2 = filter_var($_POST['state2'], FILTER_SANITIZE_STRING);
 		
 		mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-		$mysqli = mysqli_connect("localhost", "root", "Ericpm96", "salaries");
+		$mysqli = mysqli_connect("localhost", "root", "passwords", "salaries");
 		$query = "SELECT cost_index FROM cost WHERE state = '".$state1."'";
 
 		$result = mysqli_query($mysqli, $query);

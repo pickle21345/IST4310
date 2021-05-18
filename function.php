@@ -8,7 +8,7 @@
 		$state2 = filter_var($_POST['state2'], FILTER_SANITIZE_STRING);
 		
 		mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-		$mysqli = mysqli_connect("localhost", "root", "passwords", "salaries");
+		$mysqli = mysqli_connect("localhost", "root", "Ericpm96", "salaries");
 		$query = "SELECT cost_index FROM cost WHERE state = '".$state1."'";
 
 		$result = mysqli_query($mysqli, $query);
@@ -26,9 +26,9 @@
 			$future = $row[0];
 		}
 
-		echo "<link rel='stylesheet' href='style.css'>";
+		echo "<link rel='stylesheet' href='styles2.css'>";
 		
-		echo "<div class = 'header'><h1>Real Estate Services</h1></div>";
+		echo "<div class = 'header'><h1>Samra Moreno Real Estate Services</h1></div>";
 
  		echo "<div class='navbar'><a href='index.html'>Homepage</a></div>";
 
@@ -38,8 +38,6 @@
 		echo "<div class='column2' style='background-color:#aaa; width: 50%'><p>Current State: " .$state1. "</p></div>";
 
 		echo "<div class='column2' style='background-color:#bbb; width: 50%'><p>Future State: " .$state2. "</p></div>";
-
-		echo "<div class='column3' style='background-color:#ccc;'><p>This is Current Salary " .$salary. "</p></div>";
 
 
 		//$newSalary = $salary((($future-$current)/100)+1);

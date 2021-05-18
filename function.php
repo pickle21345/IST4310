@@ -28,30 +28,30 @@
 
 		echo "<link rel='stylesheet' href='style.css'>";
 		
-		echo "<div class = 'header'><p>Real Estate Services</p></div>";
+		echo "<div class = 'header'><h1>Real Estate Services</h1></div>";
+
+ 		echo "<div class='navbar'><a href='index.html'>Homepage</a></div>";
+
 
 		echo "<div  class='row'>";
 
-		echo "<div class='column' style='background-color:#aaa;'><p> Current State: " .$state1. "</p></div>";
+		echo "<div class='column2' style='background-color:#aaa; width: 50%'><p>Current State: " .$state1. "</p></div>";
 
-		echo "<div class='column' style='background-color:#bbb;'><p> Future State: " .$state2. "</p></div>";
+		echo "<div class='column2' style='background-color:#bbb; width: 50%'><p>Future State: " .$state2. "</p></div>";
 
-		echo "<div class='column' style='background-color:#ccc;'><p> This is Current Salary " .$salary. "</p></div>";
+		echo "<div class='column3' style='background-color:#ccc;'><p>This is Current Salary " .$salary. "</p></div>";
 
 
 		//$newSalary = $salary((($future-$current)/100)+1);
 		$newSalary = $salary*((($future-$current)/100)+1);
 
-		echo "<div class='Footer'><p> Your New Salary ".$newSalary." !!</p></div>";
-
+		echo "<div class='footer2'><p> Your Salary to maintain the same standard of living is ".$newSalary." !!</p></div>";
 		echo "</div>";
 	}
 	else
 	{
-      		print "<p>Missing or invalid parameters. Please go back to the lab.html page to
+      		print "<p>Missing or invalid parameters. Please go back to our  homepage to
       		enter valid information.<br />";
-      		print "<a href='lab07.html'>5k race</a>";
+      		print "<a href='index.html'>Samra&Oscar</a>";
 	}
 ?>
-
-

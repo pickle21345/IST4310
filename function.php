@@ -35,9 +35,9 @@
 
 		echo "<div  class='row'>";
 
-		echo "<div class='column2' style='background-color:#aaa; width: 50%'><p>Current State: " .$state1. "</p></div>";
+		echo "<div class='column2' style= 'width: 50%'><p>Current State: " .$state1. "</p></div>";
 
-		echo "<div class='column2' style='background-color:#bbb; width: 50%'><p>Future State: " .$state2. "</p></div>";
+		echo "<div class='column2' style='width: 50%'><p>Future State: " .$state2. "</p></div>";
 
 
 		//$newSalary = $salary((($future-$current)/100)+1);

@@ -5,8 +5,10 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    background-position: center;
     background-image: url(background.jpg);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 
@@ -14,9 +16,8 @@
   .header {
     /*background-color: #87CEEB;*/
     background-position:center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    opacity:1;
+    background-size: contain;
+    opacity:.75;
     background-color: grey;
     padding: 30px;
     text-align: center;
@@ -26,6 +27,7 @@
   
   /* Create three equal columns that floats next to each other */
   .column {
+    opacity: .85;
     float: left;
     width: 33%;
     padding: 5%;
@@ -39,8 +41,13 @@
     text-align:center;
     opacity: .76;
     font-size: 20px;
+    background-color: #87ceeb;
   }
-  
+ 
+  .column p {
+  background-color: #87ceeb;
+  padding: 30px;
+} 
   .column3 {
    text-align:center;
   }

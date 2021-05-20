@@ -52,11 +52,7 @@
    text-align:center;
   }
 
-  .Article {
-    background-color: grey;
-    padding: 2.5%;
-    height: 330px;
-  } 
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
